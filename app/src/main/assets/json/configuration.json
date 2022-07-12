@@ -19,8 +19,7 @@
         "/sign_in$"
       ],
       "properties": {
-        "context": "modal",
-        "uri": "turbo://fragment/web/modal",
+        "uri": "turbo://fragment/sign_in",
         "pull_to_refresh_enabled": false
       }
     }
