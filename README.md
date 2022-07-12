@@ -7,10 +7,11 @@ It is build with [turbo-android](https://github.com/hotwired/turbo-android).
 
 Under development
 
-## Getting Started
+## Development
 
 1. Create OAuth client
 2. Add the client ID to `local.properties`
   ```diff
   + googleClientId=xxxxxx
   ```
+
