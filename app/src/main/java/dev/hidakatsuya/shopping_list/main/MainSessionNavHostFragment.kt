@@ -5,7 +5,8 @@ import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
 import dev.hidakatsuya.shopping_list.features.SignInFragment
 import dev.hidakatsuya.shopping_list.features.WebFragment
-import dev.hidakatsuya.shopping_list.util.SIGN_IN_URL
+import dev.hidakatsuya.shopping_list.features.WebHomeFragment
+import dev.hidakatsuya.shopping_list.util.MAIN_URL
 import dev.hotwire.turbo.BuildConfig
 import dev.hotwire.turbo.config.TurboPathConfiguration
 import dev.hotwire.turbo.session.TurboSessionNavHostFragment
@@ -15,7 +16,7 @@ import kotlin.reflect.KClass
 class MainSessionNavHostFragment : TurboSessionNavHostFragment() {
     override val sessionName = "main"
 
-    override val startLocation = SIGN_IN_URL
+    override val startLocation = MAIN_URL
 
     override val registeredActivities: List<KClass<out AppCompatActivity>>
         get() = listOf()
@@ -23,6 +24,7 @@ class MainSessionNavHostFragment : TurboSessionNavHostFragment() {
     override val registeredFragments: List<KClass<out Fragment>>
         get() = listOf(
             WebFragment::class,
+            WebHomeFragment::class,
             SignInFragment::class
         )
 

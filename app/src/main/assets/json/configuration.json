@@ -16,6 +16,15 @@
     },
     {
       "patterns": [
+        "/items$"
+      ],
+      "properties": {
+        "uri": "turbo://fragment/web/home",
+        "presentation": "replace_root"
+      }
+    },
+    {
+      "patterns": [
         "/sign_in$"
       ],
       "properties": {
