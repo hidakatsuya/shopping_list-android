@@ -12,7 +12,7 @@ Under development
 1. Create Google OAuth client
 2. Create `debug.properties` file
 3. Set build configs
-  ```diff
+  ```
   BASE_URL=<base url of your web app>
   GOOGLE_CLIENT_ID=<your client id>
   ```
@@ -22,7 +22,9 @@ Under development
 1. Create Google OAuth client
 2. Create `release.properties` file
 3. Set build configs
-  ```diff
+  ```
   BASE_URL=<base url of your web app>
   GOOGLE_CLIENT_ID=<your client id>
   ```
+4. Setup [App signing](https://developer.android.com/studio/publish/app-signing)
+5. Create `app/signingConfigs/release.gradle` and move `signingConfigs` added to `build.gradle`
