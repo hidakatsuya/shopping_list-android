@@ -7,6 +7,8 @@ plugins {
 android {
     compileSdk 32
 
+    apply from: "signingConfigs/release.gradle", to: android
+
     defaultConfig {
         applicationId "dev.hidakatsuya.shopping_list"
         minSdk 29
@@ -21,6 +23,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
