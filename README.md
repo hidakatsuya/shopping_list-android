@@ -9,9 +9,20 @@ Under development
 
 ## Development
 
-1. Create OAuth client
-2. Add the client ID to `local.properties`
+1. Create Google OAuth client
+2. Create `debug.properties` file
+3. Set build configs
   ```diff
-  + googleClientId=xxxxxx
+  BASE_URL=<base url of your web app>
+  GOOGLE_CLIENT_ID=<your client id>
   ```
 
+## Release
+
+1. Create Google OAuth client
+2. Create `release.properties` file
+3. Set build configs
+  ```diff
+  BASE_URL=<base url of your web app>
+  GOOGLE_CLIENT_ID=<your client id>
+  ```
