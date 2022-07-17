@@ -11,8 +11,17 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
 
-        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.Surface</item>
+        <!-- Customize your theme here. -->
+        <item name="toolbarStyle">@style/Theme.ShoppingList.Toolbar</item>
+        <item name="drawerArrowStyle">@style/Theme.ShoppingList.DrawerArrowStyle</item>
+    </style>
+
+    <style name="Theme.ShoppingList.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">?attr/colorOnPrimary</item>
+    </style>
+    
+    <style name="Theme.ShoppingList.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">?attr/colorOnPrimary</item>
     </style>
 </resources>
