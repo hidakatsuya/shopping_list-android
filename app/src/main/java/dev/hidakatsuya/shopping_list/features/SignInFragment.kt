@@ -4,12 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
 import com.google.android.gms.tasks.Task
+import com.google.android.material.button.MaterialButton
 import dev.hidakatsuya.shopping_list.BuildConfig
 import dev.hidakatsuya.shopping_list.R
 import dev.hidakatsuya.shopping_list.util.GoogleSignInActivityResultContract
@@ -44,7 +46,7 @@ class SignInFragment : TurboFragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_sign_in, container, false)
-        view.findViewById<SignInButton>(R.id.sign_in_button).setOnClickListener { handleSignInButtonClick() }
+        view.findViewById<MaterialButton>(R.id.sign_in_button).setOnClickListener { handleSignInButtonClick() }
         return view
     }
 
