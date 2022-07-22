@@ -7,6 +7,7 @@ import dev.hidakatsuya.shopping_list.features.SignInFragment
 import dev.hidakatsuya.shopping_list.features.WebFragment
 import dev.hidakatsuya.shopping_list.features.WebHomeFragment
 import dev.hidakatsuya.shopping_list.util.MAIN_URL
+import dev.hidakatsuya.shopping_list.util.initDayNightTheme
 import dev.hotwire.turbo.BuildConfig
 import dev.hotwire.turbo.config.TurboPathConfiguration
 import dev.hotwire.turbo.session.TurboSessionNavHostFragment
@@ -36,6 +37,7 @@ class MainSessionNavHostFragment : TurboSessionNavHostFragment() {
     override fun onSessionCreated() {
         super.onSessionCreated()
         session.webView.settings.userAgentString = customUserAgent(session.webView)
+        session.webView.initDayNightTheme()
 
         if (BuildConfig.DEBUG) {
             session.setDebugLoggingEnabled(true)
