@@ -26,7 +26,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Set the following configs to create `debug.properties` file:
 ```
-BASE_URL=<base url of your web app>
+BASE_URL=<base url for the development version of your Shopping List app, usually this would be http://localhost:3000>
 GOOGLE_CLIENT_ID=<your client id>
 ```
 
@@ -36,13 +36,12 @@ Build and run app.
 
 1. Set the following configs to create `release.properties` file
   ```
-  BASE_URL=<base url of your web app>
+  BASE_URL=<base url for the production version of your Shopping List app>
   GOOGLE_CLIENT_ID=<your client id>
   ```
 2. Set up [App signing](https://developer.android.com/studio/publish/app-signing)
 3. Create `app/signingConfigs/release.gradle` and move `signingConfigs` added to `build.gradle`
-
-Build app.
+4. Build app
 
 ## License
 
