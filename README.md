@@ -1,5 +1,7 @@
 # Shopping List Android
 
+[![CI](https://github.com/hidakatsuya/shopping_list-android/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/hidakatsuya/shopping_list-android/actions/workflows/test.yml)
+
 An Android client for the [Shopping List](https://github.com/hidakatsuya/shopping_list) web
 built with [turbo-android](https://github.com/hotwired/turbo-android).
 
