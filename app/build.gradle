@@ -9,6 +9,8 @@ android {
 
     apply from: "signingConfigs/release.gradle", to: android
 
+    namespace 'dev.hidakatsuya.shopping_list'
+
     defaultConfig {
         applicationId "dev.hidakatsuya.shopping_list"
         minSdk 29
