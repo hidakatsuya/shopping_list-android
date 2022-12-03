@@ -5,14 +5,14 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     apply from: "signingConfigs/release.gradle", to: android
 
     defaultConfig {
         applicationId "dev.hidakatsuya.shopping_list"
         minSdk 29
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
