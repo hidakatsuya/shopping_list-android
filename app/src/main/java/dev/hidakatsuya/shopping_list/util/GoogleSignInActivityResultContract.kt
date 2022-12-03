@@ -9,7 +9,7 @@ import com.google.android.gms.tasks.Task
 
 class GoogleSignInActivityResultContract:
     ActivityResultContract<Intent, Task<GoogleSignInAccount>>() {
-    override fun createIntent(context: Context, input: Intent?): Intent {
+    override fun createIntent(context: Context, input: Intent): Intent {
         return input!!
     }
 

@@ -5,14 +5,14 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     apply from: "signingConfigs/release.gradle", to: android
 
     defaultConfig {
         applicationId "dev.hidakatsuya.shopping_list"
         minSdk 29
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -45,5 +45,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation 'dev.hotwire:turbo:7.0.0-rc12'
+    implementation 'dev.hotwire:turbo:7.0.0-rc14'
 }
