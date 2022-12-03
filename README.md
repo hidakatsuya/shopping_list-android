@@ -12,7 +12,7 @@ built with [turbo-android](https://github.com/hotwired/turbo-android).
 
 ## Built With
 
-- [Turbo Native for Android](https://github.com/hotwired/turbo-android) 7.0.0-rc12
+- [Turbo Native for Android](https://github.com/hotwired/turbo-android) 7.0.0-rc14
 
 ## Getting Started
 
